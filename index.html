@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <main>
+<section class="vh-100">
+    <div class="login text-center pt-5 rounded-4 d-flex flex-column justify-content-center align-items-center">
+        <h1>Login your account</h1>
+        <input class="bg-transparent  rounded-2 p-2 border-white border-1 mt-2" type="email" id="mailinput" placeholder="Enter your email">
+        <input class="bg-transparent rounded-2 p-2 border-white border-1 mt-3" type="password" id="passinput" placeholder="Enter your pasword">
+        <p id="incorrect" class="mt-3 fs-6 d-none" style="color: #DC3545;">incorrect email or password</p>
+        <p id="wrong" class="mt-3 fs-6 d-none" style="color: #DC3545;">All inputs is required</p>
+        <button onclick="check()" type="submit" class="bg-transparent btn mt-3 border-1">Login</button>
+        <p class="mt-2 text-white">Don’t have an account? <span><a class="text-decoration-none text-white" href="./sign_up.html">Sign Up</a></span></p>
+    </div>
+</section>
+</main>
+
+
+
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

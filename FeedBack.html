@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - Akletna</title>
+    <link rel="stylesheet" href="appearance.css">
+    <script src="JavaScript-1.js" defer></script>
+</head>
+<body>
+
+<header style="font-family:monospace;">Royal Restaurant</header>
+
+<div class="container">
+    <h1>Feedback</h1>
+
+    <p>We appreciate any feedback that helps us improve.</p>
+
+    <form id="feedbackForm" onsubmit="return validateForm('feedbackForm')">
+        <label>Your Name</label>
+        <input type="text">
+
+        <label>Your Feedback</label>
+        <textarea rows="5"></textarea>
+
+        <label>Upload File (optional)</label>
+        <input type="file">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>© 2025 Akletna Restaurant</footer>
+
+</body>
+</html>

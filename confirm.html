@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      
+    }
+    .checkmark {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      
+    }
+    .checkmark::after {
+      content: "✔";
+      font-size: 50px;
+      color: white;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    button {
+      background-color: #0f6705;
+      border: none;
+      padding: 12px 25px;
+        color: white;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+      font-weight: bold;
+    }
+    button:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="checkmark"></div>
+  <h1>Your order is confirmed</h1>
+  <p>Your order will be ready in 20-30 minutes.</p>
+  <button onclick="window.location.href='menu.html'">Order Again</button>
+</body>
+</html>

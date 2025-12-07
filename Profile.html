@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperMarket</title>
+    <!-- link start -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- link end -->
+
+    <!-- link font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end link fonts -->
+  </head>
+  <body>
+    <main>
+      <!-- navbar start -->
+
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Resturant</a>
+          <button
+            class="navbar-toggler w-25"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-primary py-0 ms-2">
+                  <a class="nav-link fw-bold" href="./index.html">Logout</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navbar end -->
+
+      <section style="margin-top: 10%">
+        <div class="w-25 mx-auto">
+            <img class="w-100" src="./images/imgi_1_avatar.svg" alt="">
+            <h4 id="username" class="text-center text-warning mt-3 fs-1"></h4>
+        </div>
+        <h3 class=" text-center mt-5 fw-light">
+           We are absolutely thrilled to have you on board and want
+          to extend our heartfelt thanks for logging in to our restaurant’s
+          website! Your presence means a lot to us, and we are committed to
+          making your experience with us as delightful and memorable as
+          possible. By joining our online community, you now have exclusive
+          access to our latest menu updates, special offers, and upcoming
+          events. We hope that every visit to our site brings you inspiration,
+          convenience, and a little taste of the joy we put into our food. Thank
+          you for trusting us and taking the first step toward a delicious
+          journey. We look forward to serving you, surprising you with new
+          flavors, and ensuring that every interaction leaves you smiling. Once
+          again, Ahmed, welcome and thank you for being part of our restaurant
+          family! Warm regards,
+        </h3>
+      </section>
+    </main>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/Home.js"></script>
+    <script>
+  var user =  localStorage.getItem("nameinput")
+   document.getElementById("username").innerHTML = user
+    
+</script>
+  </body>
+</html>
